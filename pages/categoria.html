@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Productos – Gustossi Bolivia</title>
+  <meta name="description" content="Explora todos los productos de Gustossi Bolivia."/>
+  <link rel="icon" href="../images/icons/favicon.ico"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <link rel="stylesheet" href="../css/style.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="../index.html" class="nav-logo">
+    <img src="../images/icons/logo.png" alt="Gustossi"
+         onerror="this.outerHTML='<span class=\'nav-logo-txt\'>Gustos<span>si</span></span>'"/>
+  </a>
+  <ul class="nav-links">
+    <li><a href="../index.html#productos"><i class="fa-solid fa-grid-2"></i> Productos</a></li>
+    <li><a href="../index.html#nosotros"><i class="fa-solid fa-star"></i> Nosotros</a></li>
+    <li><a href="../index.html#recetas"><i class="fa-solid fa-book-open"></i> Recetas</a></li>
+    <li><a href="http://wa.me/59175256114" class="nav-cta" target="_blank"><i class="fa-brands fa-whatsapp"></i> Contacto</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="../index.html" onclick="closeMobile()"><i class="fa-solid fa-house"></i> Inicio</a>
+  <a href="../index.html#productos" onclick="closeMobile()"><i class="fa-solid fa-grid-2"></i> Productos</a>
+  <a href="../index.html#nosotros" onclick="closeMobile()"><i class="fa-solid fa-star"></i> Nosotros</a>
+  <a href="http://wa.me/59175256114" target="_blank" onclick="closeMobile()"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+</div>
+
+<!-- HERO CATEGORÍA -->
+<div class="cat-hero-pg" id="cat-hero-pg">
+  <img id="cat-hero-img" src="" alt="" loading="eager"/>
+  <div class="cat-hero-inner">
+    <nav class="breadcrumb" aria-label="Navegación">
+      <a href="../index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+      <i class="fa-solid fa-chevron-right"></i>
+      <a href="../index.html#productos">Productos</a>
+      <i class="fa-solid fa-chevron-right"></i>
+      <span id="bc-label">—</span>
+    </nav>
+    <h1 class="cat-pg-h1" id="cat-pg-h1"><em>—</em></h1>
+    <p class="cat-pg-desc" id="cat-pg-desc"></p>
+  </div>
+</div>
+
+<!-- TABS -->
+<div class="cat-tabs-bar">
+  <div class="cat-tabs-inner" id="cat-tabs"></div>
+</div>
+
+<!-- GRID PRODUCTOS -->
+<div style="max-width:1360px; margin:0 auto; padding:3.5rem 5vw 6rem;">
+  <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:2.5rem; flex-wrap:wrap; gap:1rem;">
+    <h2 class="catpg-title" id="catpg-title" style="font-family:'Cormorant Garamond',serif; font-size:1.75rem; font-weight:600; color:var(--ink);">Productos</h2>
+    <span class="catpg-count" id="catpg-count" style="font-size:.78rem; font-weight:600; color:var(--br); background:var(--br-lt); padding:.3rem 1rem; border-radius:100px;"></span>
+  </div>
+  <div class="catpg-grid" id="catpg-grid"></div>
+
+  <!-- CTA -->
+  <div class="cat-cta-box">
+    <h3>¿Quieres hacer <em>un pedido?</em></h3>
+    <p>Contáctanos para pedidos al por mayor, distribuidores y tiendas en toda Bolivia.</p>
+    <a href="http://wa.me/59175256114" class="btn btn-white" target="_blank">
+      <i class="fa-brands fa-whatsapp"></i> Escribir por WhatsApp
+    </a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <img src="../images/icons/logo-white.png" alt="Gustossi" class="footer-logo-img" onerror="this.style.display='none'"/>
+      <div class="footer-brand-name">Gustos<span>si</span> Bolivia</div>
+      <p class="footer-tagline">Industrias Alimenticias Gustossi S.R.L. — Galletería, Panadería, Repostería y más. El sabor del buen gusto boliviano.</p>
+      <div class="footer-socials">
+        <a href="https://www.facebook.com/GustossiBolivia" class="soc-btn" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/gustossibolivia/" class="soc-btn" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="http://wa.me/59175256114" class="soc-btn" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.tiktok.com/@gustossibolivia" class="soc-btn" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h6>Categorías</h6>
+      <ul id="footer-cats"></ul>
+    </div>
+    <div class="footer-col">
+      <h6>Empresa</h6>
+      <ul>
+        <li><a href="../index.html#nosotros"><i class="fa-solid fa-chevron-right"></i> Nosotros</a></li>
+        <li><a href="../index.html#recetas"><i class="fa-solid fa-chevron-right"></i> Recetas</a></li>
+        <li><a href="../index.html"><i class="fa-solid fa-chevron-right"></i> Inicio</a></li>
+        <li><a href="http://wa.me/59175256114" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></li>
+      </ul>
+    </div>
+    <div class="footer-col footer-contact">
+      <h6>Contacto</h6>
+      <p>¿Tienes preguntas? Escríbenos directamente.</p>
+      <a href="http://wa.me/59175256114" class="wa-btn" target="_blank"><i class="fa-brands fa-whatsapp"></i> Abrir WhatsApp</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Gustossi Bolivia – El Sabor del Buen Gusto. Todos los derechos reservados.</span>
+    <span>Industrias Alimenticias Gustossi S.R.L. · Bolivia</span>
+  </div>
+</footer>
+
+<script src="../js/categorias-data.js"></script>
+<script>
+  /* ── Leer parámetro URL ── */
+  const params  = new URLSearchParams(window.location.search);
+  const slug    = params.get('cat') || 'galleteria';
+  const cat     = CATS_DATA[slug] || CATS_DATA['galleteria'];
+  const entries = Object.entries(CATS_DATA);
+
+  /* ── Título y meta ── */
+  document.title = cat.nombre + ' – Gustossi Bolivia';
+  document.querySelector('meta[name="description"]').content =
+    cat.descripcion + ' — Gustossi Bolivia.';
+
+  /* ── Hero ── */
+  document.getElementById('cat-hero-img').src = cat.heroImg || '';
+  document.getElementById('cat-hero-img').alt = cat.nombre;
+  document.getElementById('bc-label').textContent = cat.nombre;
+  document.getElementById('cat-pg-h1').innerHTML =
+    cat.nombre.split(' ').map((w, i) => i === 0 ? `<em>${w}</em>` : w).join(' ');
+  document.getElementById('cat-pg-desc').textContent = cat.descripcion;
+  document.getElementById('catpg-title').textContent = cat.nombre;
+
+  /* ── Tabs ── */
+  document.getElementById('cat-tabs').innerHTML = entries.map(([s, c]) => `
+    <a href="categoria.html?cat=${s}"
+       class="cat-tab ${s === slug ? 'active' : ''}">
+      <i class="fa-solid ${c.icon}"></i> ${c.nombre}
+    </a>
+  `).join('');
+
+  /* ── Grid ── */
+  const grid = document.getElementById('catpg-grid');
+  const count = document.getElementById('catpg-count');
+  count.textContent = cat.productos.length + ' producto' + (cat.productos.length !== 1 ? 's' : '');
+
+  grid.innerHTML = cat.productos.map((p, i) => `
+    <div class="catpg-card reveal" style="transition-delay:${i * 60}ms">
+      <div class="catpg-img">
+        ${p.img
+          ? `<img src="${p.img}" alt="${p.nombre}" loading="lazy">`
+          : `<i class="catpg-img-ico fa-solid ${cat.icon}"></i>`}
+      </div>
+      <div class="catpg-body">
+        <div class="catpg-cat"><i class="fa-solid fa-tag"></i> ${cat.nombre}</div>
+        <div class="catpg-name">${p.nombre}</div>
+        <a href="http://wa.me/59175256114?text=Hola,%20me%20interesa%20el%20producto:%20${encodeURIComponent(p.nombre)}"
+           class="catpg-link" target="_blank">
+          Consultar <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  `).join('');
+
+  /* ── Footer cats ── */
+  document.getElementById('footer-cats').innerHTML = entries.map(([s, c]) => `
+    <li><a href="categoria.html?cat=${s}"><i class="fa-solid fa-chevron-right"></i> ${c.nombre}</a></li>
+  `).join('');
+
+  /* ── Reveal ── */
+  const obs = new IntersectionObserver(entries2 => {
+    entries2.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('visible'), i * 80);
+        obs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+  /* ── Nav scroll ── */
+  const nav = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  }, { passive: true });
+  nav.classList.toggle('scrolled', window.scrollY > 60);
+
+  /* ── Menú móvil ── */
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  hamburger?.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    mobileMenu?.classList.toggle('open');
+    document.body.style.overflow = mobileMenu?.classList.contains('open') ? 'hidden' : '';
+  });
+  window.closeMobile = function() {
+    hamburger?.classList.remove('open');
+    mobileMenu?.classList.remove('open');
+    document.body.style.overflow = '';
+  };
+</script>
+</body>
+</html>
